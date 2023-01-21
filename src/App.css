@@ -1,38 +1,170 @@
-.App {
-  text-align: center;
+.header {
+  background-color: #333138;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header strong {
+  font-size: 24px;
+  color: rgb(230, 224, 224);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header h2 {
+  font-size: 18px;
+  color: rgb(232, 222, 222);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background-color: #FFFFFA;
+  color: rgb(127, 75, 187);
+
+}
+
+
+
+.main__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.profile__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4em
+}
+
+.profile_details_preview {
+  background-color: #D2D6EF;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1em;
+}
+
+
+#search__form input[type="text"] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+#search__form input[type="submit"] {
+  width: 100px;
+  background-color: #A1CDF1;
   color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.search__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.form__wrapper1 {
+  grid-column: 1 / 2;
+}
+
+.form__wrapper2 {
+  grid-column: 3 / 3;
+}
+
+btn-primary {
+  background-color: #040608;
+  color: #fff;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: crosshair;
+  font-size: 16px;
+}
+
+input {
+  padding: 0.5em;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1em;
+
+}
+
+.profile_details_header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  color: #260F26;
+}
+
+.profile_details_image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #FCEFEF;
+}
+
+input.add_twitter_btn {
+  background-color: #1da1f2;
+  color: #fff;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: crosshair;
+  font-size: 16px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .header {
+    font-size: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .header strong {
+    font-size: 20px;
+  }
+
+  .header h2 {
+    font-size: 16px;
+  }
+
+  .main__container {
+    padding: 10px;
+  }
+
+  .profile__list {
+    grid-template-columns: 1fr;
+  }
+
+  .form__wrapper1,
+  .form__wrapper2 {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  #search__form input[type="text"] {
+    width: 80%;
+  }
+
+  #search__form input[type="submit"] {
+    width: 40%;
+  }
+
+  .profile_details_preview {
+    margin-bottom: 10px;
+  }
+
+  .profile_details_header {
+    flex-wrap: nowrap;
+  }
+
+  .profile_details_image {
+    width: 40px;
+    height: 40px;
   }
 }
