@@ -5,10 +5,9 @@ import Homepage from "./pages/Homepage";
 function App() {
   return (
     <div>
-      <h1>appjs</h1>
       <Router>
         <Routes>
-          <Route path="" element={<Homepage />} />
+          <Route path="/kraken" element={<Homepage />} />
         </Routes>
       </Router>
     </div>
