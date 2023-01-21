@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/kraken/static/css/main.4dc5a8fd.css",
-    "main.js": "/kraken/static/js/main.cdd6f572.js",
+    "main.js": "/kraken/static/js/main.2f721995.js",
     "index.html": "/kraken/index.html",
     "main.4dc5a8fd.css.map": "/kraken/static/css/main.4dc5a8fd.css.map",
-    "main.cdd6f572.js.map": "/kraken/static/js/main.cdd6f572.js.map"
+    "main.2f721995.js.map": "/kraken/static/js/main.2f721995.js.map"
   },
   "entrypoints": [
     "static/css/main.4dc5a8fd.css",
-    "static/js/main.cdd6f572.js"
+    "static/js/main.2f721995.js"
   ]
 }
